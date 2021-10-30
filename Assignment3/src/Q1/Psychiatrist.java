@@ -10,12 +10,7 @@ public class Psychiatrist{
 
     public static void observe(Moody moody){
         moody.ExpressFeelings();
-        moody.toString();
+        System.out.println("Observation: " + moody.toString());
     }
-
-    public String toString(){
-        return moody.toString();
-    }
-
 
 }

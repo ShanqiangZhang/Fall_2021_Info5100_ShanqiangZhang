@@ -15,7 +15,6 @@ public class Sad extends Moody{
 
     @Override
     public String toString() {
-        System.out.println("Observation: Subject cries a lot");
-        return null;
+        return "Subject cries a lot";
     }
 }

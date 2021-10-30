@@ -15,7 +15,6 @@ public class Happy extends Moody{
 
     @Override
     public String toString() {
-        System.out.println("Observation: Subject laughs a lot");
-        return null;
+        return "Subject laughs a lot";
     }
 }
