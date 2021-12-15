@@ -27,7 +27,7 @@ public class Main {
         Movie movie6 = new Movie("movie6", date6);
         Movie movie7 = new Movie("movie7", date7);
         Date year2000 = new GregorianCalendar(2000, Calendar.FEBRUARY, 1).getTime();
-        Date year1900 = new GregorianCalendar(1900, Calendar.FEBRUARY, 1).getTime();
+        Date year1990 = new GregorianCalendar(1990, Calendar.FEBRUARY, 1).getTime();
         Date timeTest = new GregorianCalendar(1995, Calendar.FEBRUARY, 1).getTime();
 
         Genre genre1 = new Genre("genre1");
@@ -71,10 +71,10 @@ public class Main {
 
 
         //predicates condition by year range
-        Predicate<Movie> after1900 = movie -> movie.getReleaseDate().after(year1900);
+        Predicate<Movie> after1900 = movie -> movie.getReleaseDate().after(year1990);
         Predicate<Movie> before2000 = movie -> movie.getReleaseDate().before(year2000);
 
-        printThelistByYearRange(movies,"between 1900-2000 years", after1900,before2000);
+        printThelistByYearRange(movies,"between 1990-2000 years", after1900,before2000);
 
        //comparator to sort title
         System.out.println("-----------------");
